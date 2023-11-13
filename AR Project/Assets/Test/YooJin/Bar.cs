@@ -8,6 +8,9 @@ public class Bar : MonoBehaviour
     public GameObject bar;
     public int time;
 
+    private bool isStopped = false;
+    public static bool isAnimationComplete = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +20,28 @@ public class Bar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        StopAnimationIfNeeded();
     }
 
     public void AnimateBar()
     {
-        LeanTween.scaleX(bar, 1, time);
+        if (!isStopped)
+        {
+            LeanTween.scaleX(bar, 1, time).setOnComplete(OnAnimationComplete);
+        }
     }
 
+    private void StopAnimationIfNeeded()
+    {
+        if (GameManager.time >= 20 && !isStopped)
+        {
+            LeanTween.cancel(bar);
+            isStopped = true;
+        }
+    }
+
+    private void OnAnimationComplete()
+    {
+        Bar.isAnimationComplete = true;
+    }
 }

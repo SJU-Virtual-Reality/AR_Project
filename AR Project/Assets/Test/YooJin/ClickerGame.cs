@@ -8,6 +8,7 @@ public class ClickerGame : MonoBehaviour
 
     public Text ui;
     public GameObject A;
+    public GameObject F;
 
     public void Increment()
     {
@@ -28,6 +29,15 @@ public class ClickerGame : MonoBehaviour
         else
         {
             A.SetActive(false);
+        }
+
+        if (Bar.isAnimationComplete && GameManager.time != 20)
+        {
+            F.SetActive(true);
+        }
+        else
+        {
+            F.SetActive(false);
         }
     }
 }
