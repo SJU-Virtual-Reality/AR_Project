@@ -13,6 +13,8 @@ public class AngleGameTest : MonoBehaviour
     private float distance = 5.0f; // 카메라와 중심 물체 사이의 초기 거리
     [SerializeField]
     private float sensitivity = 2.0f; // 마우스 감도
+    [SerializeField]
+    private bool isAR = true;
 
     private Quaternion answerQuaternion;
     private float answerAngleDifference = 5f;
@@ -26,18 +28,22 @@ public class AngleGameTest : MonoBehaviour
     private void Start()
     {
         mainCamera = Camera.main.gameObject;
-
+        if (isAR == false)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
         answerQuaternion = Quaternion.Euler(0f, 0f, 0f);
-
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     private void Update()
     {
         if(isClear == false)
         {
-            CameraHandle();
+            if(isAR == false)
+            {
+                CameraHandle();
+            }
             ClearHandle();
         }
     }
@@ -59,6 +65,7 @@ public class AngleGameTest : MonoBehaviour
     private void ClearHandle()
     {
         float angleDifference = Quaternion.Angle(mainCamera.transform.rotation, answerQuaternion);
+        Debug.Log("angleDifference : " + angleDifference);
         if (angleDifference < answerAngleDifference)
         {
             isClear = true;
