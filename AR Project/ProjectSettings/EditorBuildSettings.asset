@@ -5,15 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main.unity
     guid: a923deebea938664e9888142ffeb4147
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game.unity
     guid: f44a7d43b7dbfb7499da110770d96188
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Map.unity
     guid: 48eff6982312bd44eba6f5b1cf660dc7
+  - enabled: 1
+    path: Assets/Test/Yohan/AR Test/AR Test.unity
+    guid: 1a8d12281ae17844aaeb5a2657fa789d
   m_configObjects:
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: c081355297d8b4843878d9a1d5cfffb5, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: e7806bc69c46f6e45a47c2aca81cf94a, type: 2}
