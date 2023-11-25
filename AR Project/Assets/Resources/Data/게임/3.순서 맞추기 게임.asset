@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8bcac844a91effe4db5727f0a1e1b834, type: 3}
-  m_Name: "2.\uAC8C\uC784"
+  m_Name: "3.\uC21C\uC11C \uB9DE\uCD94\uAE30 \uAC8C\uC784"
   m_EditorClassIdentifier: 
-  gameName: "\uAC8C\uC7842"
+  gameName: "\uC21C\uC11C \uB9DE\uCD94\uAE30 \uAC8C\uC784"
   gamePrefab: {fileID: 0}

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9602775ba8de054aae47d78d9ce2e0e, type: 3}
-  m_Name: "4.\uAC74\uBB3C"
+  m_Name: "2.\uAD70\uC790\uAD00"
   m_EditorClassIdentifier: 
-  buildingName: "\uAC74\uBB3C4"
+  buildingName: "\uAD70\uC790\uAD00"
   markerDatas:
-  - {fileID: 11400000, guid: 3e13fbabcd0bee64086e4cb97c427a61, type: 2}
+  - {fileID: 11400000, guid: c28a5a1510ff06844a042c577155a6fe, type: 2}
