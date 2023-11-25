@@ -8,6 +8,8 @@ public static class DataController
     private static float bgmVolume;
     private static float sfxVolume;
 
+
+
     public static float GameVolume
     { 
         get => gameVolume;
@@ -36,10 +38,28 @@ public static class DataController
         }
     }
 
+
+
     static DataController()
     {
         LoadData();
     }
+
+
+
+    public static void SaveGameData(string markerName, int gameIndex)
+    {
+        PlayerPrefs.SetInt("GameData_" + markerName, gameIndex);
+        PlayerPrefs.Save();
+    }
+
+    public static int LoadGameData(string markerName)
+    {
+        return PlayerPrefs.GetInt("GameData_" + markerName, 0);
+    }
+
+
+
 
     private static void SaveData()
     {
