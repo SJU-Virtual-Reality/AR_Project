@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{d7cbb994-a0c0-4ed3-be62-7b92c147da1c}">
+	<object class="AudioFile" id="{8807c916-b381-493d-b906-5773b4f1c458}">
 		<property name="assetPath">
-			<value>Sound/UI/GameStart/interface-124464.mp3</value>
+			<value>Sound/InGame/클리커/pop-91931.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>44.0999985</value>
+			<value>24</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>2.3248979591836734</value>
+			<value>3.1440000000000001</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{2bf82680-3705-47fa-822c-32ead4333cca}</destination>

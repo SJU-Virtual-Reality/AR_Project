@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="EncodableAsset" id="{8928312f-197b-49e7-b2b2-9a4ecd9ab1ed}">
+	<object class="EncodableAsset" id="{832f24fb-e008-4769-9345-9dcdf3438c32}">
 		<property name="assetPath">
-			<value>Sound/UI/UI-Button-Click/</value>
+			<value>Sound/InGame/</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{2bf82680-3705-47fa-822c-32ead4333cca}</destination>

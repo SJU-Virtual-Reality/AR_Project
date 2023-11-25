@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="EncodableAsset" id="{e22d97b8-df72-4578-8f91-75665308de6e}">
+	<object class="EncodableAsset" id="{1d39051d-e5d6-492a-af0c-213bfdc0080b}">
 		<property name="assetPath">
-			<value>Sound/</value>
+			<value>Sound/InGame/클리커/</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{2bf82680-3705-47fa-822c-32ead4333cca}</destination>
