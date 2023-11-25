@@ -23,7 +23,7 @@ public class ClickerGame : MonoBehaviour
         }
         GameManager.time += GameManager.multiplier;
 
-        LeanTween.scale(Clicker, Vector3.one * 0.8f, 0.1f).setEaseOutQuad().setOnComplete(() =>
+        LeanTween.scale(Clicker, Vector3.one * 0.5f, 0.01f).setEaseOutQuad().setOnComplete(() =>
         {
             LeanTween.scale(Clicker, Vector3.one, 0.1f).setEaseInQuad();
         });
