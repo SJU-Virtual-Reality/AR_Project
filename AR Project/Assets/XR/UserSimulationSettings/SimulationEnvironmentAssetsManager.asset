@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SimulationEnvironmentAssetsManager
   m_EditorClassIdentifier: 
   m_EnvironmentPrefabPaths:
+  - Assets/Test/Yohan/AR Image Test/OfficeMap 3 image.prefab
   - Assets/Test/Yohan/AR Test/DefaultMap.prefab
   - Assets/Test/Yohan/AR Test/OfficeMap.prefab
   - Assets/UnityXRContent/ARFoundation/SimulationEnvironments/Backyard/Backyard_45ftx40ft.prefab
