@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct StartView: View {
+    @EnvironmentObject var unityManager: UnityManager
+    
+    @State private var unityIsLoading: Bool = false
+    
     var body: some View {
         VStack(spacing: 72) {
             Spacer()
@@ -36,14 +40,25 @@ struct StartView: View {
     
     private var startButton: some View {
         Button {
-            UnityManager.shared.launchUnity()
+            withAnimation(.smooth) {
+                unityIsLoading = true
+                unityManager.startUnity = true
+            }
         } label: {
             HStack {
                 Spacer()
                 
-                Text("시작하기")
-                    .foregroundStyle(Color.white)
-                    .font(.title2.bold())
+                Group {
+                    if unityIsLoading {
+                        ProgressView()
+                            .progressViewStyle(.circular)
+                            .controlSize(.large)
+                    } else {
+                        Text("시작하기")
+                    }
+                }
+                .foregroundStyle(Color.white)
+                .font(.title2.bold())
                 
                 Spacer()
             }

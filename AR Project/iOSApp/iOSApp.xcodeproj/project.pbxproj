@@ -12,8 +12,14 @@
 		C91457252B10A3C5009BBB65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91457242B10A3C5009BBB65 /* Assets.xcassets */; };
 		C91457282B10A3C5009BBB65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91457272B10A3C5009BBB65 /* Preview Assets.xcassets */; };
 		C91457372B10A3FE009BBB65 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C91457352B10A3FE009BBB65 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C914573C2B10A43F009BBB65 /* UnityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914573B2B10A43F009BBB65 /* UnityManager.swift */; };
+		C914573C2B10A43F009BBB65 /* UnityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914573B2B10A43F009BBB65 /* UnityBridge.swift */; };
 		C91457402B10A5C3009BBB65 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914573F2B10A5C3009BBB65 /* StartView.swift */; };
+		C9DE7F6A2B10C1460078C4E0 /* UnityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE7F692B10C1460078C4E0 /* UnityView.swift */; };
+		C9DE7F6C2B10CD4B0078C4E0 /* UnityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE7F6B2B10CD4B0078C4E0 /* UnityManager.swift */; };
+		C9DE7F6F2B10CE540078C4E0 /* InGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE7F6E2B10CE540078C4E0 /* InGameView.swift */; };
+		C9DE7F722B10D2C50078C4E0 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE7F712B10D2C50078C4E0 /* SettingView.swift */; };
+		C9DE7F752B10D8E60078C4E0 /* GlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE7F742B10D8E60078C4E0 /* GlassView.swift */; };
+		C9DE7F782B10DC8A0078C4E0 /* GameStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE7F772B10DC8A0078C4E0 /* GameStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,9 +43,15 @@
 		C91457242B10A3C5009BBB65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91457272B10A3C5009BBB65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C91457352B10A3FE009BBB65 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C914573B2B10A43F009BBB65 /* UnityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityManager.swift; sourceTree = "<group>"; };
+		C914573B2B10A43F009BBB65 /* UnityBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityBridge.swift; sourceTree = "<group>"; };
 		C914573F2B10A5C3009BBB65 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		C95283E82B10B72600E2BBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C9DE7F692B10C1460078C4E0 /* UnityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityView.swift; sourceTree = "<group>"; };
+		C9DE7F6B2B10CD4B0078C4E0 /* UnityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityManager.swift; sourceTree = "<group>"; };
+		C9DE7F6E2B10CE540078C4E0 /* InGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameView.swift; sourceTree = "<group>"; };
+		C9DE7F712B10D2C50078C4E0 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		C9DE7F742B10D8E60078C4E0 /* GlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassView.swift; sourceTree = "<group>"; };
+		C9DE7F772B10DC8A0078C4E0 /* GameStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,10 @@
 		C914571F2B10A3C4009BBB65 /* iOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				C9DE7F762B10DC7C0078C4E0 /* GameState */,
+				C9DE7F732B10D8D30078C4E0 /* Glass */,
+				C9DE7F702B10D2AC0078C4E0 /* Setting */,
+				C9DE7F6D2B10CE3A0078C4E0 /* InGame */,
 				C95283E82B10B72600E2BBCA /* Info.plist */,
 				C914573E2B10A5B7009BBB65 /* Start */,
 				C914573D2B10A44E009BBB65 /* Root */,
@@ -103,7 +119,9 @@
 		C914573A2B10A432009BBB65 /* Unity */ = {
 			isa = PBXGroup;
 			children = (
-				C914573B2B10A43F009BBB65 /* UnityManager.swift */,
+				C914573B2B10A43F009BBB65 /* UnityBridge.swift */,
+				C9DE7F692B10C1460078C4E0 /* UnityView.swift */,
+				C9DE7F6B2B10CD4B0078C4E0 /* UnityManager.swift */,
 			);
 			path = Unity;
 			sourceTree = "<group>";
@@ -122,6 +140,38 @@
 				C914573F2B10A5C3009BBB65 /* StartView.swift */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		C9DE7F6D2B10CE3A0078C4E0 /* InGame */ = {
+			isa = PBXGroup;
+			children = (
+				C9DE7F6E2B10CE540078C4E0 /* InGameView.swift */,
+			);
+			path = InGame;
+			sourceTree = "<group>";
+		};
+		C9DE7F702B10D2AC0078C4E0 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C9DE7F712B10D2C50078C4E0 /* SettingView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		C9DE7F732B10D8D30078C4E0 /* Glass */ = {
+			isa = PBXGroup;
+			children = (
+				C9DE7F742B10D8E60078C4E0 /* GlassView.swift */,
+			);
+			path = Glass;
+			sourceTree = "<group>";
+		};
+		C9DE7F762B10DC7C0078C4E0 /* GameState */ = {
+			isa = PBXGroup;
+			children = (
+				C9DE7F772B10DC8A0078C4E0 /* GameStateView.swift */,
+			);
+			path = GameState;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,10 +245,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DE7F752B10D8E60078C4E0 /* GlassView.swift in Sources */,
+				C9DE7F6F2B10CE540078C4E0 /* InGameView.swift in Sources */,
+				C9DE7F6A2B10C1460078C4E0 /* UnityView.swift in Sources */,
 				C91457232B10A3C4009BBB65 /* RootView.swift in Sources */,
 				C91457212B10A3C4009BBB65 /* iOSAppApp.swift in Sources */,
-				C914573C2B10A43F009BBB65 /* UnityManager.swift in Sources */,
+				C914573C2B10A43F009BBB65 /* UnityBridge.swift in Sources */,
+				C9DE7F722B10D2C50078C4E0 /* SettingView.swift in Sources */,
+				C9DE7F782B10DC8A0078C4E0 /* GameStateView.swift in Sources */,
 				C91457402B10A5C3009BBB65 /* StartView.swift in Sources */,
+				C9DE7F6C2B10CD4B0078C4E0 /* UnityManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
