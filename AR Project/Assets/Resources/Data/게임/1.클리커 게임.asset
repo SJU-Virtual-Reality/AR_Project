@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: "1.\uD074\uB9AC\uCEE4 \uAC8C\uC784"
   m_EditorClassIdentifier: 
   gameName: "\uD074\uB9AC\uCEE4 \uAC8C\uC784"
-  gamePrefab: {fileID: 0}
+  gamePrefab: {fileID: 492185199336087892, guid: 1b1371fde48fc92488996be703bcb75a, type: 3}

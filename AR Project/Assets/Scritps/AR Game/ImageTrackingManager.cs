@@ -2,19 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 public class ImageTrackingManager : MonoBehaviour
 {
-    public ARTrackedImageManager trackedImageManager;
+    [SerializeField]
+    private ARTrackedImageManager trackedImageManager;
+    [SerializeField]
+    private XRReferenceImageLibrary xRReferenceImages;
 
-    [System.Serializable]
-    public class ImagePrefabPair
-    {
-        public string imageName;
-        public GameObject prefab;
-    }
-
-    public List<ImagePrefabPair> imagePrefabPairs = new List<ImagePrefabPair>();
+    [SerializeField]
+    private List<SO_MarkerData> markerDatas;
 
     private void OnEnable()
     {
@@ -46,11 +44,12 @@ public class ImageTrackingManager : MonoBehaviour
 
     void OnImageAdded(ARTrackedImage trackedImage)
     {
-        foreach (var pair in imagePrefabPairs)
+        for (int i = 0; i < xRReferenceImages.count; i++)
         {
-            if (trackedImage.referenceImage.name == pair.imageName)
+            if (trackedImage.referenceImage.name == xRReferenceImages[i].name)
             {
-                Instantiate(pair.prefab, trackedImage.transform.position, trackedImage.transform.rotation);
+                Instantiate(markerDatas[i].gameDatas[0].gamePrefab, trackedImage.transform.position, trackedImage.transform.rotation);
+                break;
             }
         }
     }
