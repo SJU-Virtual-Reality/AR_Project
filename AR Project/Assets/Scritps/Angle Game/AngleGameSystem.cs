@@ -4,12 +4,16 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using TMPro;
 
-public class ARObjectDistanceAngle : MonoBehaviour
+public class AngleGameSystem : MonoBehaviour
 {
     public TextMeshProUGUI angText;
     public TextMeshProUGUI disText;
     public Transform augmentedObject;
     public Transform answerObject;
+
+    public float answerDistance = 0.05f;
+
+    private bool isGameClear = false;
 
     ARCameraManager arCameraManager;
 
@@ -20,11 +24,23 @@ public class ARObjectDistanceAngle : MonoBehaviour
 
     void Update()
     {
+        if (isGameClear)
+        {
+            return;
+        }
+
         Vector3 cameraPosition = arCameraManager.transform.position;
 
         // AR 카메라와 정답 오브젝트 간의 거리 계산
         float distance = Vector3.Distance(cameraPosition, answerObject.position);
         disText.text = "distance: " + distance;
+
+        if (distance <= answerDistance)
+        {
+            Debug.Log("GameClear~!");
+            isGameClear = true;
+            return;
+        }
 
         // AR 카메라와 증강된 오브젝트 간의 각도 차이 계산
         Vector3 directionToTarget = augmentedObject.position - cameraPosition;

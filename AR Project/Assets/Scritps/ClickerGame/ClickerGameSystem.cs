@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using DG.Tweening;
 
-public class ClickerGame : MonoBehaviour
+public class ClickerGameSystem : MonoBehaviour
 {
     private enum GameState
     {

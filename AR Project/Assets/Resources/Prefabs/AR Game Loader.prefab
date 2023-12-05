@@ -45,6 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackedImageManager: {fileID: 0}
-  imagePrefabPairs:
-  - imageName: 
-    prefab: {fileID: 0}
+  xRReferenceImages: {fileID: 0}
+  markerDatas: []
