@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 11400000, guid: 784a7c8adee9d294d9e2d28f30066a78, type: 2}
   m_MaxNumberOfMovingImages: 2
-  m_TrackedImagePrefab: {fileID: 1015303392914722769, guid: b26b36529a6815c4da8cc04a13054be8, type: 3}
+  m_TrackedImagePrefab: {fileID: 4367790368975886511, guid: 469c5cbc3591ce84ea5e588f0f1e665c, type: 3}
 --- !u!114 &1150372541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1061,7 +1061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RaycastPrefab: {fileID: 1015303392914722769, guid: b26b36529a6815c4da8cc04a13054be8, type: 3}
+  m_RaycastPrefab: {fileID: 4367790368975886511, guid: 469c5cbc3591ce84ea5e588f0f1e665c, type: 3}
 --- !u!1 &1173441251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1940,6 +1940,7 @@ GameObject:
   - component: {fileID: 2065602784}
   - component: {fileID: 2065602783}
   - component: {fileID: 2065602782}
+  - component: {fileID: 2065602787}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2162,6 +2163,27 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!135 &2065602787
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065602780}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
