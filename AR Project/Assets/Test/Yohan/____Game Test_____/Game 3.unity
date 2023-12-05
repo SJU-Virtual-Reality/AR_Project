@@ -158,7 +158,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3e13fbabcd0bee64086e4cb97c427a61, type: 2}
   - {fileID: 11400000, guid: c28a5a1510ff06844a042c577155a6fe, type: 2}
   - {fileID: 11400000, guid: db936793ba632fa41b920bb258d35c75, type: 2}
-  - {fileID: 11400000, guid: db936793ba632fa41b920bb258d35c75, type: 2}
 --- !u!4 &174834124
 Transform:
   m_ObjectHideFlags: 0
@@ -981,7 +980,6 @@ GameObject:
   - component: {fileID: 1150372542}
   - component: {fileID: 1150372541}
   - component: {fileID: 1150372540}
-  - component: {fileID: 1150372544}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -1003,7 +1001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 11400000, guid: 784a7c8adee9d294d9e2d28f30066a78, type: 2}
   m_MaxNumberOfMovingImages: 2
-  m_TrackedImagePrefab: {fileID: 0}
+  m_TrackedImagePrefab: {fileID: 4468608651320317231, guid: afc66cff6c2be724f8b1961834300043, type: 3}
 --- !u!114 &1150372541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1050,19 +1048,6 @@ Transform:
   - {fileID: 579259480}
   m_Father: {fileID: 552282495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1150372544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150372539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RaycastPrefab: {fileID: 0}
 --- !u!1 &1173441251
 GameObject:
   m_ObjectHideFlags: 0
