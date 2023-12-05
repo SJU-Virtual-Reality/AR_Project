@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MatchingGame : MonoBehaviour
+public class OrderGameSystem : MonoBehaviour
 {
     [SerializeField]
-    private int objectCount = 8;
+    private List<GameObject> objectList;
 
-    private List<GameObject> objectList = new List<GameObject>();
-
-    private void Start()
-    {
-        AddObject();
-    }
+    private bool isGameClear = false;
 
     private void Update()
     {
+        if (isGameClear)
+        {
+            return;
+        }
+
         // 마우스 클릭으로 오브젝트를 제거합니다.
         if (Input.GetMouseButtonDown(0))
         {
@@ -44,18 +44,13 @@ public class MatchingGame : MonoBehaviour
                         break; // 중복 제거 방지를 위해 루프를 종료합니다.
                     }
                 }
-            }
-        }
-    }
 
-    private void AddObject()
-    {
-        // 오브젝트를 생성하고 리스트에 추가합니다.
-        for (int i = 0; i < objectCount; i++)
-        {
-            GameObject newObject = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            newObject.transform.position = new Vector3(i * 2, 0, 0);
-            objectList.Add(newObject);
+                if(objectList.Count == 0)
+                {
+                    Debug.Log("GameClaer!");
+                    isGameClear = true;
+                }
+            }
         }
     }
 }
