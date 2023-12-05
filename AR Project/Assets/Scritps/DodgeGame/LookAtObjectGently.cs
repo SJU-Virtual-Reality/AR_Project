@@ -16,10 +16,4 @@ public class LookAtObjectGently : MonoBehaviour
         transform.DOKill();
         transform.DORotate(targetTransform.rotation.eulerAngles, followDelay).SetEase(Ease.Linear);
     }
-
-
-    private void OnTriggerEnter(Collider other)
-    {
-        EventManager.TriggerEvent("DodgeGame_OnTriggerEnter");
-    }
 }

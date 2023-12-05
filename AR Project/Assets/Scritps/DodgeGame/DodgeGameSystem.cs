@@ -5,6 +5,8 @@ using UnityEngine;
 public class DodgeGameSystem : MonoBehaviour
 {
     [SerializeField]
+    private GameObject laser;
+    [SerializeField]
     private float clearTime = 5f;
 
     private bool isGameClear = false;
@@ -40,5 +42,6 @@ public class DodgeGameSystem : MonoBehaviour
     {
         isGameClear = true;
         Debug.Log("GameClear!");
+        laser.SetActive(false);
     }
 }
