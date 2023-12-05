@@ -8,11 +8,11 @@ public class AudioManager : MonoBehaviour
 {
     [Header("Volume")]
     [Range(0, 1)]
-    public float masterVolume = 1.0f;
+    public float masterVolume;
     [Range(0, 1)]
-    public float bgmVolume = 1.0f;
+    public float bgmVolume;
     [Range(0, 1)]
-    public float sfxVolume = 1.0f;
+    public float sfxVolume;
 
     private Bus masterBus;
     private Bus bgmBus;
@@ -20,6 +20,9 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
+        sfxVolume = DataController.SfxVolume / 100.0f;
+        bgmVolume = DataController.BgmVolume / 100.0f;
+        masterVolume = DataController.GameVolume / 100.0f;
         masterBus = RuntimeManager.GetBus("bus:/");
         bgmBus = RuntimeManager.GetBus("bus:/bgm");
         sfxBus = RuntimeManager.GetBus("bus:/sfx");
