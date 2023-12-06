@@ -35,7 +35,6 @@ public class OrderGameSystem : MonoBehaviour
                         {
                             Destroy(clickedObject);
                             objectList.RemoveAt(i);
-                            Debug.Log("Object removed at index " + i);
                         }
                         else
                         {
@@ -47,7 +46,7 @@ public class OrderGameSystem : MonoBehaviour
 
                 if(objectList.Count == 0)
                 {
-                    Debug.Log("GameClaer!");
+                    EventManager.TriggerEvent("OnGameClear");
                     isGameClear = true;
                 }
             }

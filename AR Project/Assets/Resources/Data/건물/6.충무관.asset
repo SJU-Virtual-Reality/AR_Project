@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildingName: "\uCDA9\uBB34\uAD00"
   markerDatas:
-  - {fileID: 11400000, guid: c28a5a1510ff06844a042c577155a6fe, type: 2}
+  - {fileID: 11400000, guid: 0bc75a798a7678c4ead9d2ead75a92e1, type: 2}

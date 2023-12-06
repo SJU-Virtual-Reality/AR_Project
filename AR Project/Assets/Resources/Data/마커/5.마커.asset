@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9602775ba8de054aae47d78d9ce2e0e, type: 3}
-  m_Name: "4.\uAD11\uAC1C\uD1A0\uAD00"
+  m_Script: {fileID: 11500000, guid: ec585a1cfa1cb17448932567b1947f63, type: 3}
+  m_Name: "5.\uB9C8\uCEE4"
   m_EditorClassIdentifier: 
-  buildingName: "\uAD11\uAC1C\uD1A0\uAD00"
-  markerDatas:
-  - {fileID: 11400000, guid: b6adce50dc64db74ea08a8663e7ad212, type: 2}
+  markerName: "\uB9C8\uCEE45"
+  gameDatas:
+  - {fileID: 11400000, guid: 8767f15048848a640a08a0fd4925e09f, type: 2}

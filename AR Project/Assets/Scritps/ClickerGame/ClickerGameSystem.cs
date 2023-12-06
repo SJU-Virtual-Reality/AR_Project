@@ -11,7 +11,7 @@ public class ClickerGameSystem : MonoBehaviour
     {
         Game,
         GameClear,
-        GameOver
+        GameFail
     }
 
 
@@ -23,10 +23,6 @@ public class ClickerGameSystem : MonoBehaviour
 
     [SerializeField]
     private Text ui;
-    [SerializeField]
-    private GameObject GameClear;
-    [SerializeField]
-    private GameObject GameFail;
     [SerializeField]
     private GameObject ClickerObject;
     [SerializeField]
@@ -68,7 +64,7 @@ public class ClickerGameSystem : MonoBehaviour
         time += Time.deltaTime;
         bar.transform.LeanScaleX(time / timeLimit, 0f);
 
-        GameOverHandle();
+        GameFailHandle();
     }
 
     void DetectTouch()
@@ -117,18 +113,16 @@ public class ClickerGameSystem : MonoBehaviour
         if (score == maxScore)
         {
             gameState = GameState.GameClear;
-            GameClear.SetActive(true);
-            GameFail.SetActive(false);
+            EventManager.TriggerEvent("OnGameClear");
         }
     }
 
-    void GameOverHandle()
+    void GameFailHandle()
     {
         if (gameState != GameState.GameClear && time >= timeLimit)
         {
-            gameState = GameState.GameOver;
-            GameClear.SetActive(false);
-            GameFail.SetActive(true);
+            gameState = GameState.GameFail;
+            EventManager.TriggerEvent("OnGameFail");
         }
     }
 

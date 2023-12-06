@@ -37,7 +37,9 @@ public class AngleGameSystem : MonoBehaviour
 
         if (distance <= answerDistance)
         {
-            Debug.Log("GameClear~!");
+            EventManager.TriggerEvent("OnGameClear");
+            disText.text = "";
+            angText.text = "";
             isGameClear = true;
             return;
         }

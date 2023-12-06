@@ -1,5 +1,39 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &949615692691645931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8428458762346802180}
+  m_Layer: 0
+  m_Name: GameObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8428458762346802180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949615692691645931}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3470276068639158503}
+  - {fileID: 7924728812939543194}
+  - {fileID: 3504329606575164156}
+  m_Father: {fileID: 2501381900347539114}
+  m_LocalEulerAnglesHint: {x: 180, y: 180, z: 0}
 --- !u!1 &1127632172579087593
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +250,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2501381900347539114}
+  m_Father: {fileID: 8428458762346802180}
   m_LocalEulerAnglesHint: {x: -74.121, y: -100.971, z: 0.008}
 --- !u!119 &3014165679431248358
 Projector:
@@ -227,7 +261,7 @@ Projector:
   m_GameObject: {fileID: 3695992268704561689}
   m_Enabled: 1
   serializedVersion: 2
-  m_NearClipPlane: 0.91
+  m_NearClipPlane: 0.01
   m_FarClipPlane: 10
   m_FieldOfView: 60
   m_AspectRatio: 1
@@ -381,12 +415,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4000633727059749723}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2501381900347539114}
+  m_Father: {fileID: 8428458762346802180}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!33 &2919890848470934073
 MeshFilter:
@@ -477,7 +511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4782555869973841381
 RectTransform:
   m_ObjectHideFlags: 0
@@ -723,7 +757,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.8947674, y: 0.31881094, z: -0.11492783, w: 0.2907621}
   m_LocalPosition: {x: 0.315, y: -0.334, z: 0.005}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_LocalScale: {x: 0.030000001, y: 0.030000001, z: 0.03}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7256774235532017850}
@@ -731,7 +765,7 @@ Transform:
   - {fileID: 9209954145781067508}
   - {fileID: 7548342153138904227}
   - {fileID: 6834637959224457361}
-  m_Father: {fileID: 2501381900347539114}
+  m_Father: {fileID: 8428458762346802180}
   m_LocalEulerAnglesHint: {x: 36.414, y: 181.443, z: 141.252}
 --- !u!1 &8858271259123110897
 GameObject:
@@ -743,7 +777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2501381900347539114}
   m_Layer: 0
-  m_Name: AngleGame 2
+  m_Name: 5.AngleGame 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,9 +796,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3470276068639158503}
-  - {fileID: 7924728812939543194}
-  - {fileID: 3504329606575164156}
+  - {fileID: 8428458762346802180}
   - {fileID: 5623020018462591953}
   - {fileID: 7449325867045173449}
   m_Father: {fileID: 0}

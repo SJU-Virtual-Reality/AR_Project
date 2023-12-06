@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8bcac844a91effe4db5727f0a1e1b834, type: 3}
-  m_Name: "2.\uAC01\uB3C4 \uB9DE\uCD94\uAE30 \uAC8C\uC784"
+  m_Name: "5.\uAC01\uB3C4 \uB9DE\uCD94\uAE30 \uAC8C\uC784 2"
   m_EditorClassIdentifier: 
-  gameName: "\uAC01\uB3C4 \uB9DE\uCD94\uAE30 \uAC8C\uC784"
-  gamePrefab: {fileID: 8858271259123110897, guid: b81f3ce23920ea4459ce43e222ee3dcc, type: 3}
+  gameName: "\uAC01\uB3C4 \uB9DE\uCD94\uAE30 \uAC8C\uC784 2"
+  gamePrefab: {fileID: 8858271259123110897, guid: b60372377b87fd24789288d21d84ec1f, type: 3}

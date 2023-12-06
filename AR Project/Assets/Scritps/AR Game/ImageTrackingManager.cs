@@ -14,6 +14,8 @@ public class ImageTrackingManager : MonoBehaviour
     [SerializeField]
     private List<SO_MarkerData> markerDatas;
 
+    private GameObject runningGamePrefabs;
+
     private void OnEnable()
     {
         trackedImageManager.trackedImagesChanged += OnTrackedImagesChanged;
@@ -48,7 +50,12 @@ public class ImageTrackingManager : MonoBehaviour
         {
             if (trackedImage.referenceImage.name == xRReferenceImages[i].name)
             {
-                Instantiate(markerDatas[i].gameDatas[0].gamePrefab, trackedImage.transform.position, trackedImage.transform.rotation);
+                if (runningGamePrefabs != null)
+                {
+                    Destroy(runningGamePrefabs);
+                }
+                EventManager.TriggerEvent("OnNewGame");
+                runningGamePrefabs = Instantiate(markerDatas[i].gameDatas[0].gamePrefab, trackedImage.transform.position, trackedImage.transform.rotation);
                 break;
             }
         }

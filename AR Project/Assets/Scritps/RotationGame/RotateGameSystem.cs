@@ -60,7 +60,7 @@ public class RotateGameSystem : MonoBehaviour
                     Vector3 newRotation = Vector3.zero;
                     newRotation.x = 0f;
                     newRotation.y = rotationY;
-                    newRotation.z = 180f;
+                    newRotation.z = 0f;
 
                     rotateObject.transform.localRotation = Quaternion.Euler(newRotation);
                 }
@@ -73,10 +73,10 @@ public class RotateGameSystem : MonoBehaviour
             Vector3 answerRotation = Vector3.zero;
             answerRotation.x = 0f;
             answerRotation.y = 180f;
-            answerRotation.z = 180f;
+            answerRotation.z = 0f;
             rotateObject.transform.DOLocalRotate(answerRotation, 0.5f);
             isGameClear = true;
-            Debug.Log("GameClear!");
+            EventManager.TriggerEvent("OnGameClear");
         }
 
         prevCameraRotationZ = mainCamera.gameObject.transform.localRotation.eulerAngles.z;

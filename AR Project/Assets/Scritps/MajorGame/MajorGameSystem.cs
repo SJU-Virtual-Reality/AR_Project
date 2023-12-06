@@ -10,11 +10,11 @@ public class MajorGameSystem : MonoBehaviour
     private List<MajorObject> wrongMajorObjects;
 
     private bool isGameClear = false;
-    private bool isGameOver = false;
+    private bool isGameFail = false;
 
     private void Update()
     {
-        if (isGameClear || isGameOver)
+        if (isGameClear || isGameFail)
         {
             return;
         }
@@ -35,14 +35,14 @@ public class MajorGameSystem : MonoBehaviour
         if (allCorrectClicked)
         {
             DisableAllMajorComponent();
-            Debug.Log("GameClaer!");
+            EventManager.TriggerEvent("OnGameClear");
             isGameClear = true;
             return;
         }
 
 
 
-        // 게임 오버 처리
+        // 게임 실패 처리
         bool anyWrongClicked = false;
 
         foreach (var majorObject in wrongMajorObjects)
@@ -58,8 +58,8 @@ public class MajorGameSystem : MonoBehaviour
         if (anyWrongClicked)
         {
             DisableAllMajorComponent();
-            Debug.Log("GameOver...");
-            isGameOver = true;
+            EventManager.TriggerEvent("OnGameFail");
+            isGameFail = true;
             return;
         }
     }

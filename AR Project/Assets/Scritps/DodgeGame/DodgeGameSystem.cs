@@ -10,7 +10,7 @@ public class DodgeGameSystem : MonoBehaviour
     private float clearTime = 5f;
 
     private bool isGameClear = false;
-    private bool isGameOver = false;
+    private bool isGameFail = false;
 
     private void Awake()
     {
@@ -29,19 +29,19 @@ public class DodgeGameSystem : MonoBehaviour
 
     private void DodgeGame_OnTriggerEnter()
     {
-        if (isGameClear || isGameOver)
+        if (isGameClear || isGameFail)
         {
             return;
         }
         CancelInvoke("GameClearHandle");
-        isGameOver = true;
-        Debug.Log("GameOver...");
+        isGameFail = true;
+        EventManager.TriggerEvent("OnGameFail");
     }
 
     private void GameClearHandle()
     {
         isGameClear = true;
-        Debug.Log("GameClear!");
+        EventManager.TriggerEvent("OnGameClear");
         laser.SetActive(false);
     }
 }

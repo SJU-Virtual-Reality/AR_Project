@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9602775ba8de054aae47d78d9ce2e0e, type: 3}
-  m_Name: "4.\uAD11\uAC1C\uD1A0\uAD00"
+  m_Script: {fileID: 11500000, guid: 8bcac844a91effe4db5727f0a1e1b834, type: 3}
+  m_Name: "6.\uC804\uACF5 \uD034\uC988 \uAC8C\uC784"
   m_EditorClassIdentifier: 
-  buildingName: "\uAD11\uAC1C\uD1A0\uAD00"
-  markerDatas:
-  - {fileID: 11400000, guid: b6adce50dc64db74ea08a8663e7ad212, type: 2}
+  gameName: "\uC804\uACF5 \uD034\uC988 \uAC8C\uC784"
+  gamePrefab: {fileID: 4468608651320317231, guid: afc66cff6c2be724f8b1961834300043, type: 3}

@@ -237,7 +237,7 @@ Transform:
   m_GameObject: {fileID: 712305343556723695}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.91, y: 1.21, z: -2.384}
+  m_LocalPosition: {x: 0.63, y: 1.21, z: 2.288}
   m_LocalScale: {x: 0.5, y: 0.009999999, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39bb24e2bd7a482ca08117fb44b8e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Image: {fileID: 2800000, guid: e27eb216dbbc5de48ba1dc249ea0951a, type: 3}
+  m_Image: {fileID: 2800000, guid: defcee44a9ef971468132ad117abf7de, type: 3}
   m_ImagePhysicalSizeMeters: {x: 0.5, y: 0.5}
 --- !u!1 &724789827795522608
 GameObject:
@@ -2498,13 +2498,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9076091811743986608}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7635265051170450155}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!212 &1651040785650717894
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2546,7 +2546,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e27eb216dbbc5de48ba1dc249ea0951a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: defcee44a9ef971468132ad117abf7de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3239,7 +3239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5106149827967227361, guid: 3fb046bec96617641bce0a0cd1a0ae81, type: 3}
       propertyPath: m_Name
-      value: OfficeMap
+      value: TestOfficeMap
       objectReference: {fileID: 0}
     - target: {fileID: 5106149827967227361, guid: 3fb046bec96617641bce0a0cd1a0ae81, type: 3}
       propertyPath: m_Layer
@@ -3251,31 +3251,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7390912614923105628, guid: 3fb046bec96617641bce0a0cd1a0ae81, type: 3}
       propertyPath: m_CameraStartingPose.position.x
-      value: -4.103094
+      value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: 7390912614923105628, guid: 3fb046bec96617641bce0a0cd1a0ae81, type: 3}
       propertyPath: m_CameraStartingPose.position.y
-      value: 1.8320427
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 7390912614923105628, guid: 3fb046bec96617641bce0a0cd1a0ae81, type: 3}
       propertyPath: m_CameraStartingPose.position.z
-      value: -1.6290665
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 7390912614923105628, guid: 3fb046bec96617641bce0a0cd1a0ae81, type: 3}
       propertyPath: m_CameraStartingPose.rotation.w
-      value: -0.7805882
+      value: 0.97667766
       objectReference: {fileID: 0}
     - target: {fileID: 7390912614923105628, guid: 3fb046bec96617641bce0a0cd1a0ae81, type: 3}
       propertyPath: m_CameraStartingPose.rotation.x
-      value: -0.11358044
+      value: 0.14339028
       objectReference: {fileID: 0}
     - target: {fileID: 7390912614923105628, guid: 3fb046bec96617641bce0a0cd1a0ae81, type: 3}
       propertyPath: m_CameraStartingPose.rotation.y
-      value: -0.6082772
+      value: 0.15815142
       objectReference: {fileID: 0}
     - target: {fileID: 7390912614923105628, guid: 3fb046bec96617641bce0a0cd1a0ae81, type: 3}
       propertyPath: m_CameraStartingPose.rotation.z
-      value: 0.08820689
+      value: -0.022978969
       objectReference: {fileID: 0}
     - target: {fileID: 7390912614923105628, guid: 3fb046bec96617641bce0a0cd1a0ae81, type: 3}
       propertyPath: m_CameraMovementBounds.m_Center.x
