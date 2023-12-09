@@ -12,6 +12,8 @@ struct SettingView: View {
     
     @AppStorage("FXVALUE") private var fxValue: Int = 100
     @AppStorage("BGMVALUE") private var bgmValue: Int = 100
+    @State private var fxValueFloat: Float = 0
+    @State private var bgmValueFloat: Float = 0
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -31,6 +33,18 @@ struct SettingView: View {
         .background {
             GlassView(opacity: .extraLight)
                 .ignoresSafeArea()
+        }
+        .onChange(of: fxValueFloat) { oldValue, newValue in
+            fxValue = Int(newValue)
+            unityManager.setSFXVolume(value: String(newValue))
+        }
+        .onChange(of: bgmValueFloat) { oldValue, newValue in
+            bgmValue = Int(newValue)
+            unityManager.setBGMVolume(value: String(newValue))
+        }
+        .onAppear() {
+            fxValueFloat = Float(fxValue)
+            bgmValueFloat = Float(bgmValue)
         }
     }
     
@@ -67,9 +81,9 @@ struct SettingView: View {
                 .foregroundStyle(.accent)
                 .font(.headline)
             
-            soundSlider(title: "효과음", value: .constant(Float(fxValue)))
+            soundSlider(title: "효과음", value: $fxValueFloat)
             
-            soundSlider(title: "배경음", value: .constant(Float(bgmValue)))
+            soundSlider(title: "배경음", value: $bgmValueFloat)
         }
         .padding(20)
         .background {

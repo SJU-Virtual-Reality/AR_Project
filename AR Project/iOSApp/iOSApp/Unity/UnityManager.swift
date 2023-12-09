@@ -24,4 +24,12 @@ class UnityManager: NSObject, ObservableObject, NativeCallsProtocol {
     @Published var showGameState: Bool = false
     
     var unityBridge: UnityBridge?
+    
+    func setSFXVolume(value: String) {
+        unityBridge?.sendMessageToGameObject(go: "AudioManager", function: "setSfxVolume", message: value)
+    }
+    
+    func setBGMVolume(value: String) {
+        unityBridge?.sendMessageToGameObject(go: "AudioManager", function: "setBgmVolume", message: value)
+    }
 }
