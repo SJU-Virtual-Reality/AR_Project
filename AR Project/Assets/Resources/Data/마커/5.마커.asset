@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   markerName: "\uB9C8\uCEE45"
   gameDatas:
-  - {fileID: 11400000, guid: 8767f15048848a640a08a0fd4925e09f, type: 2}
+  - {fileID: 11400000, guid: f9c607607060d364ba88c55ae8719838, type: 2}
