@@ -485,7 +485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 11400000, guid: 784a7c8adee9d294d9e2d28f30066a78, type: 2}
   m_MaxNumberOfMovingImages: 2
-  m_TrackedImagePrefab: {fileID: 4367790368975886511, guid: 469c5cbc3591ce84ea5e588f0f1e665c, type: 3}
+  m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &1150372541
 MonoBehaviour:
   m_ObjectHideFlags: 0
