@@ -42,7 +42,28 @@ public static class DataController
 
     static DataController()
     {
+        GameDataCheck();
+
+
         LoadData();
+    }
+
+    private static void GameDataCheck()
+    {
+        if (PlayerPrefs.GetString("FirstPlay") != "True")
+        {
+            PlayerPrefs.SetString("FirstPlay", "True");
+
+            PlayerPrefs.SetString("GameClearData_" + GameType.Angle1.ToString(), "False");
+            PlayerPrefs.SetString("GameClearData_" + GameType.Angle2.ToString(), "False");
+            PlayerPrefs.SetString("GameClearData_" + GameType.Clicker.ToString(), "False");
+            PlayerPrefs.SetString("GameClearData_" + GameType.Dodge.ToString(), "False");
+            PlayerPrefs.SetString("GameClearData_" + GameType.Major.ToString(), "False");
+            PlayerPrefs.SetString("GameClearData_" + GameType.Order.ToString(), "False");
+            PlayerPrefs.SetString("GameClearData_" + GameType.Rotate.ToString(), "False");
+
+            PlayerPrefs.Save();
+        }
     }
 
 
