@@ -254,6 +254,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21f7fe792cc23a04bb82c8e33493b9f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <clickerClick>k__BackingField:
+    Guid:
+      Data1: 1195017779
+      Data2: 1141303608
+      Data3: -375365233
+      Data4: 2015083274
+    Path: event:/InGame/Clicker/Clicker-Click
+  <gameClearSound>k__BackingField:
+    Guid:
+      Data1: -477517012
+      Data2: 1077283116
+      Data3: -1234052427
+      Data4: -1018310716
+    Path: event:/InGame/Stage/StageClear
+  <gameFailSound>k__BackingField:
+    Guid:
+      Data1: -798153637
+      Data2: 1169940023
+      Data3: -51104885
+      Data4: 889434695
+    Path: event:/InGame/Stage/StageFail
 --- !u!1 &552282492
 GameObject:
   m_ObjectHideFlags: 0
