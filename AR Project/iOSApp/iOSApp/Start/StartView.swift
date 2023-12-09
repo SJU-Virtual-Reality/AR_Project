@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StartView: View {
     @EnvironmentObject var unityManager: UnityManager
+    @EnvironmentObject var soundManager: SoundManager
     
     @State private var unityIsLoading: Bool = false
     
@@ -40,6 +41,7 @@ struct StartView: View {
     
     private var startButton: some View {
         Button {
+            soundManager.playSound()
             withAnimation(.smooth) {
                 unityIsLoading = true
                 unityManager.startUnity = true

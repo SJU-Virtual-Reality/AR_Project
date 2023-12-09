@@ -10,6 +10,7 @@ import UnityFramework
 
 struct RootView: View {
     @StateObject var unityManager: UnityManager = .init()
+    @StateObject var soundManager: SoundManager = .getInstanse
     
     var body: some View {
         if unityManager.startUnity {
@@ -43,10 +44,12 @@ struct RootView: View {
                         }
                     }
                     .environmentObject(unityManager)
+                    .environmentObject(soundManager)
             }
         } else {
             StartView()
                 .environmentObject(unityManager)
+                .environmentObject(soundManager)
         }
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct InGameView: View {
     @EnvironmentObject var unityManager: UnityManager
+    @EnvironmentObject var soundManager: SoundManager
     
     var body: some View {
         VStack {
@@ -27,6 +28,7 @@ struct InGameView: View {
     
     private var settingButton: some View {
         Button {
+            soundManager.playSound()
             withAnimation(.smooth) {
                 unityManager.showSetting = true
             }
@@ -47,6 +49,7 @@ struct InGameView: View {
     
     private var gameStateButton: some View {
         Button {
+            soundManager.playSound()
             withAnimation(.smooth) {
                 unityManager.showGameState = true
             }

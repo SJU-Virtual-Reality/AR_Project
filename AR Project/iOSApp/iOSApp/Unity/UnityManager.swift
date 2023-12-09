@@ -15,10 +15,6 @@ class UnityManager: NSObject, ObservableObject, NativeCallsProtocol {
         NSClassFromString("FrameworkLibAPI")?.registerAPIforNativeCalls(self)
     }
     
-    func sendMessage(toMobileApp message: String) {
-        print(message)
-    }
-    
     @Published var startUnity: Bool = false
     @Published var showSetting: Bool = false
     @Published var showGameState: Bool = false
@@ -31,5 +27,9 @@ class UnityManager: NSObject, ObservableObject, NativeCallsProtocol {
     
     func setBGMVolume(value: String) {
         unityBridge?.sendMessageToGameObject(go: "AudioManager", function: "setBgmVolume", message: value)
+    }
+    
+    func sendMessage(toMobileApp message: String) {
+        print(message)
     }
 }

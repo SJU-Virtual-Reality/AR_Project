@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingView: View {
     @EnvironmentObject var unityManager: UnityManager
+    @EnvironmentObject var soundManager: SoundManager
     
     @AppStorage("FXVALUE") private var fxValue: Int = 100
     @AppStorage("BGMVALUE") private var bgmValue: Int = 100
@@ -37,10 +38,12 @@ struct SettingView: View {
         .onChange(of: fxValueFloat) { oldValue, newValue in
             fxValue = Int(newValue)
             unityManager.setSFXVolume(value: String(newValue))
+            UIImpactFeedbackGenerator(style: .medium).impactOccurred()
         }
         .onChange(of: bgmValueFloat) { oldValue, newValue in
             bgmValue = Int(newValue)
             unityManager.setBGMVolume(value: String(newValue))
+            UIImpactFeedbackGenerator(style: .medium).impactOccurred()
         }
         .onAppear() {
             fxValueFloat = Float(fxValue)
@@ -56,6 +59,7 @@ struct SettingView: View {
     
     private var closeButton: some View {
         Button {
+            soundManager.playSound()
             withAnimation(.smooth) {
                 unityManager.showSetting = false
             }

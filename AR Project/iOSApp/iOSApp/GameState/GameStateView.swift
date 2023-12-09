@@ -9,23 +9,31 @@ import SwiftUI
 
 struct GameStateView: View {
     @EnvironmentObject var unityManager: UnityManager
+    @EnvironmentObject var soundManager: SoundManager
     
     var body: some View {
         VStack(spacing: 20) {
             Spacer()
             
             gameStateButton(title: "다시하기") {
+                soundManager.playSound()
                 
             }
             
             gameStateButton(title: "계속하기") {
+                soundManager.playSound()
                 withAnimation(.smooth) {
                     unityManager.showGameState = false
                 }
             }
             
             gameStateButton(title: "게임 끝내기") {
-                
+                soundManager.playSound()
+                withAnimation(.smooth) {
+                    unityManager.startUnity = false
+                    unityManager.unityBridge?.unload()
+                    unityManager.showGameState = false
+                }
             }
             
             Spacer()
