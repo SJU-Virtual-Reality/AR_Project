@@ -90,6 +90,7 @@ public class ClickerGameSystem : MonoBehaviour
         if (Physics.Raycast(ray, out hit) && hit.collider.gameObject == ClickerObject)
         {
             AddScore();
+            EventManager.TriggerEvent("OnCilckerClick");
         }
         else
         {
