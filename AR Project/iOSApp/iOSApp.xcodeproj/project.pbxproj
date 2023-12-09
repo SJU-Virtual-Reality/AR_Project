@@ -11,7 +11,6 @@
 		C91457232B10A3C4009BBB65 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91457222B10A3C4009BBB65 /* RootView.swift */; };
 		C91457252B10A3C5009BBB65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91457242B10A3C5009BBB65 /* Assets.xcassets */; };
 		C91457282B10A3C5009BBB65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91457272B10A3C5009BBB65 /* Preview Assets.xcassets */; };
-		C91457372B10A3FE009BBB65 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C91457352B10A3FE009BBB65 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C914573C2B10A43F009BBB65 /* UnityBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914573B2B10A43F009BBB65 /* UnityBridge.swift */; };
 		C91457402B10A5C3009BBB65 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C914573F2B10A5C3009BBB65 /* StartView.swift */; };
 		C975CF012B2443E000E29760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C975CF002B2443E000E29760 /* AppDelegate.swift */; };
@@ -19,6 +18,7 @@
 		C975CF052B24444200E29760 /* UIWindowCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C975CF042B24444200E29760 /* UIWindowCustom.swift */; };
 		C9C2CAD72B24975400DB8AF7 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C2CAD62B24975400DB8AF7 /* SoundManager.swift */; };
 		C9C2CAD92B24986B00DB8AF7 /* ClickSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9C2CAD82B24986B00DB8AF7 /* ClickSound.mp3 */; };
+		C9C2CADC2B249FFF00DB8AF7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C2CADB2B249FFF00DB8AF7 /* MapView.swift */; };
 		C9DE7F6A2B10C1460078C4E0 /* UnityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE7F692B10C1460078C4E0 /* UnityView.swift */; };
 		C9DE7F6C2B10CD4B0078C4E0 /* UnityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE7F6B2B10CD4B0078C4E0 /* UnityManager.swift */; };
 		C9DE7F6F2B10CE540078C4E0 /* InGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE7F6E2B10CE540078C4E0 /* InGameView.swift */; };
@@ -26,20 +26,6 @@
 		C9DE7F752B10D8E60078C4E0 /* GlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE7F742B10D8E60078C4E0 /* GlassView.swift */; };
 		C9DE7F782B10DC8A0078C4E0 /* GameStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE7F772B10DC8A0078C4E0 /* GameStateView.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C91457382B10A3FE009BBB65 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C91457372B10A3FE009BBB65 /* UnityFramework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C914571D2B10A3C4009BBB65 /* iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +43,7 @@
 		C975CF042B24444200E29760 /* UIWindowCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowCustom.swift; sourceTree = "<group>"; };
 		C9C2CAD62B24975400DB8AF7 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		C9C2CAD82B24986B00DB8AF7 /* ClickSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ClickSound.mp3; sourceTree = "<group>"; };
+		C9C2CADB2B249FFF00DB8AF7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		C9DE7F692B10C1460078C4E0 /* UnityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityView.swift; sourceTree = "<group>"; };
 		C9DE7F6B2B10CD4B0078C4E0 /* UnityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityManager.swift; sourceTree = "<group>"; };
 		C9DE7F6E2B10CE540078C4E0 /* InGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameView.swift; sourceTree = "<group>"; };
@@ -96,6 +83,7 @@
 		C914571F2B10A3C4009BBB65 /* iOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				C9C2CADA2B249FF200DB8AF7 /* Map */,
 				C9C2CAD52B24974100DB8AF7 /* Sound */,
 				C9DE7F762B10DC7C0078C4E0 /* GameState */,
 				C9DE7F732B10D8D30078C4E0 /* Glass */,
@@ -167,6 +155,14 @@
 			path = Sound;
 			sourceTree = "<group>";
 		};
+		C9C2CADA2B249FF200DB8AF7 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C9C2CADB2B249FFF00DB8AF7 /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		C9DE7F6D2B10CE3A0078C4E0 /* InGame */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,7 +205,6 @@
 				C91457192B10A3C4009BBB65 /* Sources */,
 				C914571A2B10A3C4009BBB65 /* Frameworks */,
 				C914571B2B10A3C4009BBB65 /* Resources */,
-				C91457382B10A3FE009BBB65 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,6 +274,7 @@
 				C9C2CAD72B24975400DB8AF7 /* SoundManager.swift in Sources */,
 				C91457232B10A3C4009BBB65 /* RootView.swift in Sources */,
 				C91457212B10A3C4009BBB65 /* iOSAppApp.swift in Sources */,
+				C9C2CADC2B249FFF00DB8AF7 /* MapView.swift in Sources */,
 				C914573C2B10A43F009BBB65 /* UnityBridge.swift in Sources */,
 				C975CF052B24444200E29760 /* UIWindowCustom.swift in Sources */,
 				C9DE7F722B10D2C50078C4E0 /* SettingView.swift in Sources */,
@@ -424,6 +420,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "세종대탐험";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Required for augmented reality support.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -458,6 +455,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "세종대탐험";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Required for augmented reality support.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

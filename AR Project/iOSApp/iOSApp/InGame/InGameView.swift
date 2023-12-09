@@ -13,10 +13,12 @@ struct InGameView: View {
     
     var body: some View {
         VStack {
-            HStack {
+            HStack(spacing: 20) {
                 settingButton
                 
                 Spacer()
+                
+                mapButton
                 
                 gameStateButton
             }
@@ -55,6 +57,27 @@ struct InGameView: View {
             }
         } label: {
             Image(systemName: "pause.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 26, height: 26)
+                .foregroundStyle(.accent)
+                .padding(12)
+                .background {
+                    Circle()
+                        .fill(.white)
+                        .shadow(color: .black.opacity(0.25), radius: 5, x: 0, y: 0)
+                }
+        }
+    }
+    
+    private var mapButton: some View {
+        Button {
+            soundManager.playSound()
+            withAnimation(.smooth) {
+                unityManager.showMap = true
+            }
+        } label: {
+            Image(systemName: "map.fill")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 26, height: 26)

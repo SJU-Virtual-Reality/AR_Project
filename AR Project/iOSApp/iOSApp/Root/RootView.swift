@@ -42,6 +42,10 @@ struct RootView: View {
                         if unityManager.showGameState {
                             GameStateView()
                         }
+                        
+                        if unityManager.showMap {
+                            MapView()
+                        }
                     }
                     .environmentObject(unityManager)
                     .environmentObject(soundManager)

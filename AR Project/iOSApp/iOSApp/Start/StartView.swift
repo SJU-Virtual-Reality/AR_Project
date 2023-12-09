@@ -30,7 +30,7 @@ struct StartView: View {
         HStack {
             Spacer()
             
-            Image("Character")
+            Image("Logo")
                 .resizable()
                 .scaledToFit()
                 .frame(height: 400)
