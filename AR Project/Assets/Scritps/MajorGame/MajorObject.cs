@@ -35,6 +35,7 @@ public class MajorObject : MonoBehaviour
                 {
                     rendererComponenet.enabled = false;
                     isClicked = true;
+                    EventManager.TriggerEvent("OnCorrectTouch");
                 }
             }
         }
