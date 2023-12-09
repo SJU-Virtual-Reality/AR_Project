@@ -50,6 +50,7 @@ public class MajorGameSystem : MonoBehaviour
             
             if (majorObject.isClicked)
             {
+                EventManager.TriggerEvent("OnWrongTouch");
                 anyWrongClicked = true;
                 break;
             }

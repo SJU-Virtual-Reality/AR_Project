@@ -232,49 +232,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7383703747658418200, guid: 22a352192918d30428ba5197bcf54478, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 193189365}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22a352192918d30428ba5197bcf54478, type: 3}
---- !u!1 &193189364 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7383703747658418200, guid: 22a352192918d30428ba5197bcf54478, type: 3}
-  m_PrefabInstance: {fileID: 193189363}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &193189365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193189364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21f7fe792cc23a04bb82c8e33493b9f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <clickerClick>k__BackingField:
-    Guid:
-      Data1: 1195017779
-      Data2: 1141303608
-      Data3: -375365233
-      Data4: 2015083274
-    Path: event:/InGame/Clicker/Clicker-Click
-  <gameClearSound>k__BackingField:
-    Guid:
-      Data1: -477517012
-      Data2: 1077283116
-      Data3: -1234052427
-      Data4: -1018310716
-    Path: event:/InGame/Stage/StageClear
-  <gameFailSound>k__BackingField:
-    Guid:
-      Data1: -798153637
-      Data2: 1169940023
-      Data3: -51104885
-      Data4: 889434695
-    Path: event:/InGame/Stage/StageFail
 --- !u!1 &552282492
 GameObject:
   m_ObjectHideFlags: 0

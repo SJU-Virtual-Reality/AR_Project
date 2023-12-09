@@ -89,6 +89,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8991815677884333992}
+  - component: {fileID: 3665699076261794667}
   m_Layer: 0
   m_Name: Sfx
   m_TagString: Untagged
@@ -111,3 +112,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6724112654300473283}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3665699076261794667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7383703747658418200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f7fe792cc23a04bb82c8e33493b9f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <clickerClick>k__BackingField:
+    Guid:
+      Data1: 1195017779
+      Data2: 1141303608
+      Data3: -375365233
+      Data4: 2015083274
+    Path: event:/InGame/Clicker/Clicker-Click
+  <gameClearSound>k__BackingField:
+    Guid:
+      Data1: -477517012
+      Data2: 1077283116
+      Data3: -1234052427
+      Data4: -1018310716
+    Path: event:/InGame/Stage/StageClear
+  <gameFailSound>k__BackingField:
+    Guid:
+      Data1: -798153637
+      Data2: 1169940023
+      Data3: -51104885
+      Data4: 889434695
+    Path: event:/InGame/Stage/StageFail
+  <gameCorrectTouchSound>k__BackingField:
+    Guid:
+      Data1: -1902298790
+      Data2: 1218889460
+      Data3: -309521223
+      Data4: 1171547813
+    Path: event:/InGame/OrderGame/Order-Click
+  <gameWrongTouchSound>k__BackingField:
+    Guid:
+      Data1: -608916000
+      Data2: 1300501072
+      Data3: 2121621
+      Data4: 34517986
+    Path: event:/InGame/OrderGame/Dif-Order-Click

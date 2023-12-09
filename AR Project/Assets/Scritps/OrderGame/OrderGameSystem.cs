@@ -35,9 +35,11 @@ public class OrderGameSystem : MonoBehaviour
                         {
                             Destroy(clickedObject);
                             objectList.RemoveAt(i);
+                            EventManager.TriggerEvent("OnCorrectTouch");
                         }
                         else
                         {
+                            EventManager.TriggerEvent("OnWrongTouch");
                             Debug.Log("순서에 안맞는 클릭");
                         }
                         break; // 중복 제거 방지를 위해 루프를 종료합니다.
