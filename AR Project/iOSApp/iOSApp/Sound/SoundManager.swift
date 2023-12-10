@@ -19,5 +19,7 @@ class SoundManager: ObservableObject {
         
         player = try? .init(contentsOf: url)
         player?.play()
+        
+        UISelectionFeedbackGenerator().selectionChanged()
     }
 }

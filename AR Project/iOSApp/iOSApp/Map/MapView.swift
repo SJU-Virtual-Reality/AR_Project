@@ -18,6 +18,7 @@ struct MapView: View {
     @EnvironmentObject var soundManager: SoundManager
     
     @State private var mapPhase: MapPhase = .black
+    @State private var progress: Float = 0
     
     var body: some View {
         VStack(spacing: 20) {
@@ -31,6 +32,11 @@ struct MapView: View {
             case .black:
                 map(image: "MapBlack")
             }
+            
+            Text("현재 진척도 : \(progress)%")
+                .font(.title3)
+                .fontWeight(.bold)
+                .foregroundStyle(.accent)
             
             Group {
                 Text("진척도 : 0 ~ 50% - Black")
@@ -56,7 +62,9 @@ struct MapView: View {
                 .ignoresSafeArea()
         }
         .onAppear() {
-            switch unityManager.calcuteProgress() {
+            progress = unityManager.calcuteProgress()
+            
+            switch progress {
             case 0..<50:
                 mapPhase = .black
             case 50..<100:

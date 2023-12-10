@@ -16,6 +16,8 @@
 		C975CF012B2443E000E29760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C975CF002B2443E000E29760 /* AppDelegate.swift */; };
 		C975CF032B24441000E29760 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C975CF022B24441000E29760 /* SceneDelegate.swift */; };
 		C975CF052B24444200E29760 /* UIWindowCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C975CF042B24444200E29760 /* UIWindowCustom.swift */; };
+		C9B738F32B24BF620049AC58 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B738F22B24BF620049AC58 /* UnityFramework.framework */; };
+		C9B738F42B24BF620049AC58 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C9B738F22B24BF620049AC58 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9C2CAD72B24975400DB8AF7 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C2CAD62B24975400DB8AF7 /* SoundManager.swift */; };
 		C9C2CAD92B24986B00DB8AF7 /* ClickSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9C2CAD82B24986B00DB8AF7 /* ClickSound.mp3 */; };
 		C9C2CADC2B249FFF00DB8AF7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C2CADB2B249FFF00DB8AF7 /* MapView.swift */; };
@@ -27,13 +29,26 @@
 		C9DE7F782B10DC8A0078C4E0 /* GameStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE7F772B10DC8A0078C4E0 /* GameStateView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C9B738F12B24BF500049AC58 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9B738F42B24BF620049AC58 /* UnityFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C914571D2B10A3C4009BBB65 /* iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91457202B10A3C4009BBB65 /* iOSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppApp.swift; sourceTree = "<group>"; };
 		C91457222B10A3C4009BBB65 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		C91457242B10A3C5009BBB65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91457272B10A3C5009BBB65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C91457352B10A3FE009BBB65 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C914573B2B10A43F009BBB65 /* UnityBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityBridge.swift; sourceTree = "<group>"; };
 		C914573F2B10A5C3009BBB65 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		C95283E82B10B72600E2BBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +56,7 @@
 		C975CF002B2443E000E29760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C975CF022B24441000E29760 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C975CF042B24444200E29760 /* UIWindowCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowCustom.swift; sourceTree = "<group>"; };
+		C9B738F22B24BF620049AC58 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C2CAD62B24975400DB8AF7 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		C9C2CAD82B24986B00DB8AF7 /* ClickSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ClickSound.mp3; sourceTree = "<group>"; };
 		C9C2CADB2B249FFF00DB8AF7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -57,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B738F32B24BF620049AC58 /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +131,7 @@
 		C91457342B10A3FE009BBB65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C91457352B10A3FE009BBB65 /* UnityFramework.framework */,
+				C9B738F22B24BF620049AC58 /* UnityFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,6 +222,7 @@
 				C91457192B10A3C4009BBB65 /* Sources */,
 				C914571A2B10A3C4009BBB65 /* Frameworks */,
 				C914571B2B10A3C4009BBB65 /* Resources */,
+				C9B738F12B24BF500049AC58 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -26,6 +26,41 @@ struct InGameView: View {
             
             Spacer()
         }
+        .onChange(of: unityManager.clicker) { oldValue, newValue in
+            if newValue == "True" {
+                UINotificationFeedbackGenerator().notificationOccurred(.success)
+            }
+        }
+        .onChange(of: unityManager.angle1) { oldValue, newValue in
+            if newValue == "True" {
+                UINotificationFeedbackGenerator().notificationOccurred(.success)
+            }
+        }
+        .onChange(of: unityManager.angle2) { oldValue, newValue in
+            if newValue == "True" {
+                UINotificationFeedbackGenerator().notificationOccurred(.success)
+            }
+        }
+        .onChange(of: unityManager.dodge) { oldValue, newValue in
+            if newValue == "True" {
+                UINotificationFeedbackGenerator().notificationOccurred(.success)
+            }
+        }
+        .onChange(of: unityManager.major) { oldValue, newValue in
+            if newValue == "True" {
+                UINotificationFeedbackGenerator().notificationOccurred(.success)
+            }
+        }
+        .onChange(of: unityManager.order) { oldValue, newValue in
+            if newValue == "True" {
+                UINotificationFeedbackGenerator().notificationOccurred(.success)
+            }
+        }
+        .onChange(of: unityManager.rotate) { oldValue, newValue in
+            if newValue == "True" {
+                UINotificationFeedbackGenerator().notificationOccurred(.success)
+            }
+        }
     }
     
     private var settingButton: some View {

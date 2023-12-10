@@ -15,9 +15,9 @@ struct GameStateView: View {
         VStack(spacing: 20) {
             Spacer()
             
-            gameStateButton(title: "다시하기") {
+            gameStateButton(title: "초기화 하기") {
                 soundManager.playSound()
-                
+                unityManager.reset()
             }
             
             gameStateButton(title: "계속하기") {
